@@ -25,7 +25,7 @@ $(".card-montadoras").on( "click" , function (){
 $("#email").on( "blur" , function (event){
     var emailInput = event.target;
     
-    if(emailInput.validity.valid == true){
+    if(emailInput.validity.valid == true && emailInput.value){
         ga('send', 'event', 'contato', emailInput.id, 'preencheu');
     }
 
@@ -34,7 +34,7 @@ $("#email").on( "blur" , function (event){
 $("#nome").on( "blur" , function (event){
     var nomeInput = event.target;
     
-    if(nomeInput.validity.valid == true){
+    if(nomeInput.validity.valid == true && nomeInput.value){
         ga('send', 'event', 'contato', nomeInput.id, 'preencheu');
     }
 
@@ -43,7 +43,7 @@ $("#nome").on( "blur" , function (event){
 $("#telefone").on( "blur" , function (event){
     var telefoneInput = event.target;
     
-    if(telefoneInput.validity.valid == true){
+    if(telefoneInput.validity.valid == true && telefoneInput.value){
         ga('send', 'event', 'contato', telefoneInput.id, 'preencheu');
     }
 

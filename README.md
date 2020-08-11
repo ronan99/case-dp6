@@ -1,2 +1,2 @@
 # Case DP6
-Case para o DP6, implementando o google analytics no projeto entregado.
+Case para a DP6, implementando o google analytics no projeto proposto.
