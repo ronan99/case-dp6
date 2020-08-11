@@ -40,33 +40,32 @@ $("#email").on( "focusout" , function (event){
 })
 
 $("#nome").on( "focusout" , function (event){
-    var emailInput = event.target;
+    var nomeInput = event.target;
     
-    if(emailInput.validity.valid == true){
-        ga('send', 'event', 'contato', emailInput.id, 'preencheu');
+    if(nomeInput.validity.valid == true){
+        ga('send', 'event', 'contato', nomeInput.id, 'preencheu');
     }
 
 })
 
 $("#telefone").on( "focusout" , function (event){
-    var emailInput = event.target;
+    var telefoneInput = event.target;
     
-    if(emailInput.validity.valid == true){
-        ga('send', 'event', 'contato', emailInput.id, 'preencheu');
+    if(telefoneInput.validity.valid == true){
+        ga('send', 'event', 'contato', telefoneInput.id, 'preencheu');
     }
 
 })
 
 $("#aceito").on( "focusout" , function (event){
-    var emailInput = event.target;
+    var aceitoInput = event.target;
     
-    if(emailInput.validity.valid == true){
-        ga('send', 'event', 'contato', emailInput.id, 'preencheu');
+    if(aceitoInput.validity.valid == true){
+        ga('send', 'event', 'contato', aceitoInput.id, 'preencheu');
     }
 
 })
 
 $(".contato").on( "submit" , function (event){
-    console.log("submited")
-    // ga('send', 'event', 'contato', 'enviado', 'enviado');
+    ga('send', 'event', 'contato', 'enviado', 'enviado');
 })
