@@ -21,7 +21,8 @@ $(".card-montadoras").on( "click" , function (){
 })
 
 
-$("#email").on( "focusout" , function (event){
+
+$("#email").on( "blur" , function (event){
     var emailInput = event.target;
     
     if(emailInput.validity.valid == true){
@@ -30,16 +31,7 @@ $("#email").on( "focusout" , function (event){
 
 })
 
-$("#email").on( "focusout" , function (event){
-    var emailInput = event.target;
-    
-    if(emailInput.validity.valid == true){
-        ga('send', 'event', 'contato', emailInput.id, 'preencheu');
-    }
-
-})
-
-$("#nome").on( "focusout" , function (event){
+$("#nome").on( "blur" , function (event){
     var nomeInput = event.target;
     
     if(nomeInput.validity.valid == true){
@@ -48,7 +40,7 @@ $("#nome").on( "focusout" , function (event){
 
 })
 
-$("#telefone").on( "focusout" , function (event){
+$("#telefone").on( "blur" , function (event){
     var telefoneInput = event.target;
     
     if(telefoneInput.validity.valid == true){
@@ -57,12 +49,14 @@ $("#telefone").on( "focusout" , function (event){
 
 })
 
-$("#aceito").on( "focusout" , function (event){
+$("#aceito").on( "click" , function (event){
     var aceitoInput = event.target;
     
-    if(aceitoInput.validity.valid == true){
+    if(aceitoInput.checked){
         ga('send', 'event', 'contato', aceitoInput.id, 'preencheu');
     }
+    
+
 
 })
 
