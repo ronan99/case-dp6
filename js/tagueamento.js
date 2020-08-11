@@ -1,5 +1,3 @@
-ga('send', 'pageview');
-
 var makeContact  = document.getElementById("make_contact");
 var showPdf  = document.getElementById("show_pdf");
 if(makeContact){
